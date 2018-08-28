@@ -13,6 +13,8 @@ WORKDIR /app
 # Copy the app directory contents into the container at /app
 ADD ./app /app
 
+RUN npm install
+
 # Run app.js when the container launches
 CMD ["node", "app.js"]
 
